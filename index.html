@@ -1,32 +1,244 @@
-VIGIL: DESTINATION ALERTS
-Privacy Policy
-Effective date: May 4, 2026  ·  Last updated: May 4, 2026
-The short version: Vigil does not collect, store, or share your personal data. Your location never leaves your device. There are no accounts, no tracking, and no third-party analytics. This policy exists to be transparent about how the app works — not to bury what we do with your data.
-Data We Collect
-Vigil collects no personal data. We do not have servers, and we do not receive any information about you or your device.
-The only data the app stores is the pins and saved destinations you create. This data is stored:
-	•	Locally on your device via SwiftData
-	•	In your personal iCloud account via CloudKit, if you are signed in to iCloud
-This data is yours. We cannot access it, view it, or modify it in any way.
-Location Data
-Vigil requires access to your location to function. Location data is used for the following purposes only:
-	•	To show your current position on the map when creating or editing an alarm
-	•	To determine when you are approaching a saved destination and trigger an alert
-Your location is processed entirely on-device. It is never transmitted to us or any third party. It is never logged, stored beyond the active session, or used for any purpose other than the two functions described above.
-You can revoke location permissions at any time in your iPhone's Settings. Without location access, the app cannot show your position on the map or deliver alerts.
-iCloud & CloudKit
-If you are signed in to iCloud, Vigil uses Apple's CloudKit framework to sync your saved pins across your devices. This sync happens directly between your devices through your personal iCloud account.
-We have no access to your iCloud data. Apple's iCloud privacy policy governs how Apple handles this data. You can review it at apple.com/legal/privacy.
-Notifications & Live Activities
-Vigil uses push notifications and Live Activities to alert you when you approach a destination. These are delivered locally on your device and do not involve any external servers or third-party notification services.
-Third-Party Services
-Vigil uses no third-party analytics, advertising SDKs, crash reporting services, or tracking tools. There are no third parties involved in the operation of this app beyond Apple's own frameworks.
-Children's Privacy
-Vigil does not knowingly collect any data from anyone, including children under the age of 13. Since we collect no data at all, the app is safe for use by all ages.
-Changes to This Policy
-If this privacy policy changes in the future, the updated version will be posted at this URL with a revised effective date. We will not retroactively change how any previously collected data is handled — because we don't collect any.
-Contact
-If you have any questions about this privacy policy or how Vigil works, you can reach out at:
-gendron.devin@gmail.com
-© 2026 Devin. All rights reserved.
-Vigil: Destination Alerts
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigil – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0f11;
+      --surface: #16181c;
+      --border: #2a2d33;
+      --accent: #4f9eff;
+      --text-primary: #f0f2f5;
+      --text-secondary: #8a8f9a;
+      --text-muted: #555a66;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 0 1.5rem;
+    }
+
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+    }
+
+    .header {
+      margin-bottom: 4rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .intro strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 0.85rem;
+    }
+
+    p {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.85rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0.85rem;
+    }
+
+    ul li {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      padding: 0.35rem 0 0.35rem 1.25rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .highlight {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .highlight p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    .contact {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <p class="app-label">Vigil: Destination Alerts</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: May 4, 2026 &nbsp;·&nbsp; Last updated: May 4, 2026</p>
+    </header>
+
+    <div class="intro">
+      <strong>The short version:</strong> Vigil does not collect, store, or share your personal data. Your location never leaves your device. There are no accounts, no tracking, and no third-party analytics. This policy exists to be transparent about how the app works — not to bury what we do with your data.
+    </div>
+
+    <section>
+      <h2>Data We Collect</h2>
+      <p>Vigil collects no personal data. We do not have servers, and we do not receive any information about you or your device.</p>
+      <p>The only data the app stores is the pins and saved destinations you create. This data is stored:</p>
+      <ul>
+        <li>Locally on your device via SwiftData</li>
+        <li>In your personal iCloud account via CloudKit, if you are signed in to iCloud</li>
+      </ul>
+      <p>This data is yours. We cannot access it, view it, or modify it in any way.</p>
+    </section>
+
+    <section>
+      <h2>Location Data</h2>
+      <p>Vigil requires access to your location to function. Location data is used for the following purposes only:</p>
+      <ul>
+        <li>To show your current position on the map when creating or editing an alarm</li>
+        <li>To determine when you are approaching a saved destination and trigger an alert</li>
+      </ul>
+      <div class="highlight">
+        <p>Your location is processed entirely on-device. It is never transmitted to us or any third party. It is never logged, stored beyond the active session, or used for any purpose other than the two functions described above.</p>
+      </div>
+      <p>You can revoke location permissions at any time in your iPhone's Settings. Without location access, the app cannot show your position on the map or deliver alerts.</p>
+    </section>
+
+    <section>
+      <h2>iCloud &amp; CloudKit</h2>
+      <p>If you are signed in to iCloud, Vigil uses Apple's CloudKit framework to sync your saved pins across your devices. This sync happens directly between your devices through your personal iCloud account.</p>
+      <p>We have no access to your iCloud data. Apple's iCloud privacy policy governs how Apple handles this data. You can review it at <a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Notifications &amp; Live Activities</h2>
+      <p>Vigil uses push notifications and Live Activities to alert you when you approach a destination. These are delivered locally on your device and do not involve any external servers or third-party notification services.</p>
+    </section>
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>Vigil uses no third-party analytics, advertising SDKs, crash reporting services, or tracking tools. There are no third parties involved in the operation of this app beyond Apple's own frameworks.</p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>Vigil does not knowingly collect any data from anyone, including children under the age of 13. Since we collect no data at all, the app is safe for use by all ages.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>If this privacy policy changes in the future, the updated version will be posted at this URL with a revised effective date. We will not retroactively change how any previously collected data is handled — because we don't collect any.</p>
+    </section>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions about this privacy policy or how Vigil works, you can reach out at:</p>
+      <p><a href="mailto:gendron.devin@gmail.com">gendron.devin@gmail.com</a></p>
+    </div>
+
+    <footer>
+      <span>© 2026 Devin. All rights reserved.</span>
+      <span>Vigil: Destination Alerts</span>
+    </footer>
+
+  </div>
+</body>
+</html>
