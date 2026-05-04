@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigil – Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0f11;
+      --surface: #16181c;
+      --border: #2a2d33;
+      --accent: #4f9eff;
+      --text-primary: #f0f2f5;
+      --text-secondary: #8a8f9a;
+      --text-muted: #555a66;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 0 1.5rem;
+    }
+
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+    }
+
+    .header {
+      margin-bottom: 4rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .intro strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .faq-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      font-size: 0.975rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 0.65rem;
+    }
+
+    .faq-answer {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .troubleshoot {
+      margin-bottom: 3.5rem;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+
+    .checklist li {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      padding: 0.5rem 0 0.5rem 2rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .checklist li:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .checklist li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .checklist li strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-button {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.65rem 1.75rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .contact-button:hover {
+      opacity: 0.85;
+      text-decoration: none;
+    }
+
+    p {
+      font-size: 0.975rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.85rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    footer a {
+      color: var(--text-muted);
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <p class="app-label">Vigil: Destination Alerts</p>
+      <h1>Support</h1>
+      <p class="meta">We're here to help. Most answers are below — if not, just reach out.</p>
+    </header>
+
+    <div class="intro">
+      <strong>Vigil is designed to be simple.</strong> If something isn't working the way you expect, it's usually a device setting rather than the app itself. Check the troubleshooting section below before reaching out.
+    </div>
+
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <p class="faq-question">Why didn't my alert go off?</p>
+        <p class="faq-answer">A few things can prevent alerts from firing. The most common causes are low volume or a silenced device, location permissions not set correctly, Background App Refresh being disabled, or a poor network connection. See the troubleshooting checklist below for step-by-step guidance.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">What location permission does Vigil need?</p>
+        <p class="faq-answer">Vigil works with location set to "While Using." You do not need to set it to "Always Allow," though doing so does not cause any issues. You can manage this in iPhone Settings → Privacy & Security → Location Services → Vigil.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Does Vigil work with the screen off?</p>
+        <p class="faq-answer">Yes. Vigil monitors your location in the background and will alert you even when your screen is off or your phone is locked. However, the app must be running in the background — if you have force-quit the app, alerts will not fire.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Can I have multiple alarms active at the same time?</p>
+        <p class="faq-answer">Yes. You can set as many alarms as you like and have multiple monitoring your location simultaneously. Each alarm will alert you independently when you enter its radius.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How do I set the alert radius?</p>
+        <p class="faq-answer">When creating or editing an alarm, use the slider to choose how close you need to be to your destination before the alert fires. A smaller radius means the alert will trigger closer to your destination.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Can I edit an alarm that is already active?</p>
+        <p class="faq-answer">Yes. You can edit an active alarm at any time and Vigil will automatically update the monitoring state for you. There is no need to delete and recreate it.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">What happens when an alarm fires?</p>
+        <p class="faq-answer">You will receive a notification alert with sound. Tapping the notification will open Vigil directly to the fired alarm so you can dismiss it. While an alarm is active but hasn't fired yet, a Live Activity will be visible on your Lock Screen and in the Dynamic Island.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How do I delete a saved alarm?</p>
+        <p class="faq-answer">There are three ways to delete an alarm — swipe left on it in the list, open the alarm's detail view and use the delete option there, or go to Settings → Data Management to delete all alarms at once.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Will Vigil drain my battery?</p>
+        <p class="faq-answer">Vigil uses standard iOS location tracking, which has a modest impact on battery life while an alarm is actively monitoring your location. When no alarms are active, Vigil has no meaningful battery impact.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How do I disable iCloud sync?</p>
+        <p class="faq-answer">You can turn off iCloud sync from within the app in the Settings view. After toggling it off, a restart of the app is required for the change to take effect. Your pins will remain stored locally on your device.</p>
+      </div>
+
+    </div>
+
+    <div class="troubleshoot">
+      <h2>Alerts Not Working? Try This</h2>
+      <p>Work through this checklist if your alerts aren't firing as expected:</p>
+      <ul class="checklist">
+        <li><strong>Check your volume</strong> — Make sure your iPhone is not silenced and your volume is turned up. Alert sounds are controlled by your device's system volume.</li>
+        <li><strong>Check Do Not Disturb & Focus modes</strong> — These can suppress notification sounds even when volume is on. Check your Focus settings in the Control Center.</li>
+        <li><strong>Check location permissions</strong> — Go to Settings → Privacy & Security → Location Services → Vigil and make sure location access is set to "While Using" or "Always."</li>
+        <li><strong>Check Background App Refresh</strong> — Go to Settings → General → Background App Refresh and make sure it is enabled for Vigil.</li>
+        <li><strong>Make sure the app is running</strong> — Vigil must be running in the background to deliver alerts. If you have force-quit the app, reopen it and leave it running in the background.</li>
+        <li><strong>Check your network connection</strong> — A stable connection helps ensure reliable location updates and alert delivery.</li>
+        <li><strong>Check notification permissions</strong> — Go to Settings → Notifications → Vigil and make sure notifications are allowed.</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Still Need Help?</h2>
+      <p>If your issue isn't covered above, reach out and we'll get back to you as soon as possible.</p>
+      <a class="contact-button" href="mailto:gendron.devin@gmail.com">Email Support</a>
+    </div>
+
+    <footer>
+      <span>© 2026 Devin Gendron. All rights reserved.</span>
+      <span>
+        <a href="./index.html">Privacy Policy</a> &nbsp;·&nbsp;
+        <a href="./terms.html">Terms & Conditions</a>
+      </span>
+    </footer>
+
+  </div>
+</body>
+</html>
