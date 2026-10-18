@@ -171,11 +171,11 @@
     <header class="header">
       <p class="app-label">Vigil: Destination Alerts</p>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: May 4, 2026 &nbsp;·&nbsp; Last updated: May 4, 2026</p>
+      <p class="meta">Effective date: October 17, 2026 &nbsp;·&nbsp; Last updated: October 17, 2026</p>
     </header>
 
     <div class="intro">
-      <strong>The short version:</strong> Vigil does not collect, store, or share your personal data. Your location never leaves your device. There are no accounts, no tracking, and no third-party analytics. This policy exists to be transparent about how the app works — not to bury what we do with your data.
+      <strong>The short version:</strong> Vigil itself does not collect, store, or share your personal data, and your location never leaves your device. There are no accounts to create, no tracking, and no third-party analytics. The one exception is the optional <strong>Connections</strong> feature: if you choose to use it, you create a display name and avatar that's shared with the connections you approve, and you can optionally share your live location and arrival status with them while an alarm is active. This policy exists to be transparent about how the app works — not to bury what we do with your data.
     </div>
 
     <section>
@@ -186,6 +186,7 @@
         <li>On your device via SwiftData</li>
         <li>In your personal iCloud account via Apple's CloudKit, if you are signed in to iCloud</li>
       </ul>
+      <p>If you use the optional Connections feature, you also choose a display name and an avatar image to identify yourself to other users. This is a name and picture you pick — it is not required to be your real identity — and it's stored the same way as your pins: on your device and, if you're signed in to iCloud, synced via CloudKit.</p>
       <div class="highlight">
         <p>The iCloud sync means your data is stored on Apple's servers as part of your personal iCloud account — but it is stored under your Apple ID, encrypted, and is only accessible by you. We have no ability to access, view, or retrieve it in any way. Apple's privacy policy governs how they handle your iCloud data.</p>
       </div>
@@ -206,14 +207,46 @@
     </section>
 
     <section>
+      <h2>Connections &amp; Shared Information</h2>
+      <p>The Connections feature lets you pair with other users and, if you choose, share information with them. There are two different kinds of sharing, with different rules for each:</p>
+      <div class="highlight">
+        <p><strong>Display name &amp; avatar:</strong> once a connection accepts your request, your chosen display name and avatar are shared with that connection indefinitely — this is not tied to whether an alarm is active. That connection continues to see your name and avatar until you revoke it (or revoke and block it), or until you delete your Connections data entirely in Settings. Connections has no messaging or chat of any kind — the only things ever shared are your display name, avatar, and the location/trip data described below.</p>
+      </div>
+      <div class="highlight">
+        <p><strong>Location, trip &amp; arrival status:</strong> this is shared with a connection only while both of the following are true — your alarm is active for that specific trip or leg, and you have enabled sharing with that specific connection. This information is live and ephemeral: it is not shared in the background, it is not shared once the alarm ends, and it is never stored or retained beyond the active session.</p>
+      </div>
+      <p>You control which connections, if any, can see your live location for a given trip. Sharing your display name/avatar with an accepted connection and sharing your live location with that same connection are separate choices.</p>
+      <p>There is no directory or search feature for finding other users. Connections are formed only when you send someone a one-time connection code or let them scan your QR code in person — a stranger cannot look up or see your profile unless you've shared a code or QR with them directly. When you send or receive a connection request, the other person sees your display name and avatar in order to decide whether to accept; if a request is declined or cancelled, no ongoing connection is formed and no further sharing takes place.</p>
+    </section>
+
+    <section>
+      <h2>No Sale of Your Data</h2>
+      <p>We do not sell, rent, or trade your personal information to anyone, and we do not share it with third parties for advertising or marketing purposes. The only sharing described in this policy is the sharing you directly choose through the Connections feature, with the connections you personally approve.</p>
+    </section>
+
+    <section>
+      <h2>Reporting Abuse &amp; Safety</h2>
+      <p>You have full, granular control over each connection: you can mute a connection (silence their notifications without ending the relationship), revoke a connection (end the relationship and stop all sharing with them), or revoke and block a connection (end the relationship and prevent them from sending you a new request) — all from within the app, at any time.</p>
+      <p>If another user misuses the Connections feature — for example, through impersonation, a harassing or threatening display name, an inappropriate avatar image, or misuse of location/trip data you've shared with them — you can revoke or revoke-and-block that connection immediately, and you can also report the issue to us directly at <a href="mailto:dgendron.dev@gmail.com">dgendron.dev@gmail.com</a>. We review reports as promptly as we can and will remove a user's access to Connections for violations of these policies.</p>
+    </section>
+
+    <section>
       <h2>iCloud &amp; CloudKit</h2>
-      <p>If you are signed in to iCloud, Vigil uses Apple's CloudKit framework to sync your saved pins across your devices. This sync happens directly between your devices through your personal iCloud account.</p>
+      <p>If you are signed in to iCloud, Vigil uses Apple's CloudKit framework to sync your saved pins, your Connections profile (display name and avatar), and your connections across your devices. This sync happens directly between your devices and your connections' devices through your personal iCloud account.</p>
       <p>We have no access to your iCloud data. Apple's iCloud privacy policy governs how Apple handles this data. You can review it at <a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a>.</p>
     </section>
 
     <section>
+      <h2>Data Retention &amp; Deletion</h2>
+      <p>What a given connection can see changes automatically as you manage that connection: revoking a connection (with or without blocking) immediately stops them from receiving any further information from you.</p>
+      <p>Separately, you can delete your entire Connections profile — including your chosen display name and avatar — at any time, yourself, in <strong>Settings → Data Management</strong>. This is self-service: no support request is needed. Deleting your profile this way is different from revoking a single connection — it wipes your Connections profile entirely, rather than just ending one relationship.</p>
+      <p>Uninstalling Vigil from your device does not delete this data. Because it's synced to your personal iCloud account, your Connections profile and connections remain there under your Apple ID until you delete them yourself. If you want this data gone before uninstalling, use Settings → Data Management first.</p>
+    </section>
+
+    <section>
       <h2>Notifications &amp; Live Activities</h2>
-      <p>Vigil uses push notifications and Live Activities to alert you when you approach a destination. These are delivered locally on your device and do not involve any external servers or third-party notification services.</p>
+      <p>Vigil uses push notifications and Live Activities to alert you when you approach a destination. These destination alerts are generated and delivered entirely on your device and do not involve any external servers.</p>
+      <p>If you use the Connections feature, you'll also receive notifications when someone sends you a connection request, and when a connection departs on or arrives at a trip they've chosen to share with you. Because these notifications need to reach you from another person's device, they are delivered through Apple's push notification service via CloudKit — not through any server of our own. You can mute notifications from any individual connection at any time.</p>
     </section>
 
     <section>
@@ -223,7 +256,19 @@
 
     <section>
       <h2>Children's Privacy</h2>
-      <p>Vigil does not knowingly collect any data from anyone, including children under the age of 13. Since we collect no data at all, the app is safe for use by all ages.</p>
+      <p>Vigil itself has no minimum age — the core app (pins, alerts, iCloud sync) collects no data at all and is safe for use by all ages.</p>
+      <p>The Connections feature is different: because it involves sharing information with other people, you must be 16 or older to use it. We don't collect your birthdate or age anywhere in the app. Instead, when you set up a Connections profile, you're asked to confirm that you meet this age requirement before you can proceed, and we may also take into account Apple's Declared Age Range signal where it's available. If we become aware that a user under 16 is using Connections, we will remove that user's Connections access and data.</p>
+    </section>
+
+    <section>
+      <h2>Your Rights &amp; Choices</h2>
+      <p>Because Vigil has no servers or accounts, nearly everything described in this policy already lives on your own device and in your own iCloud account, so you already have direct access to it. You can view or correct your Connections display name and avatar at any time in Settings, and you can delete any or all of it at any time via Settings → Data Management, as described above.</p>
+      <p>If you are located in the European Economic Area, the United Kingdom, or another jurisdiction with similar data protection laws, you also have the right to lodge a complaint with your local data protection authority if you believe your data has been mishandled.</p>
+    </section>
+
+    <section>
+      <h2>International Data Transfers</h2>
+      <p>Your pins, Connections profile, connection, and location data are processed and stored through Apple's CloudKit infrastructure, which may store or process data in countries other than your own. If you use an iCloud account based in mainland China, Apple operates this infrastructure locally through its China partner, as described in Apple's own privacy policy. We have no separate servers of our own anywhere — all of this is governed by Apple's handling of your iCloud account.</p>
     </section>
 
     <section>
@@ -234,7 +279,7 @@
     <div class="contact">
       <h2>Contact</h2>
       <p>If you have any questions about this privacy policy or how Vigil works, you can reach out at:</p>
-      <p><a href="mailto:gendron.devin@gmail.com">gendron.devin@gmail.com</a></p>
+      <p><a href="mailto:dgendron.dev@gmail.com">dgendron.dev@gmail.com</a></p>
     </div>
 
     <footer>
